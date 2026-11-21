@@ -172,6 +172,15 @@ section.blk{padding-block:clamp(64px,9vw,112px);border-bottom:1px solid var(--li
 .tasks td:last-child{white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums}
 .tasks .ar{color:var(--wood);margin:0 6px}
 
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.note-card{display:grid;gap:12px;align-content:start;background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:24px;color:var(--ink);text-decoration:none;transition:transform .35s var(--ease),border-color .35s}
+.note-card:hover{transform:translateY(-4px);border-color:var(--wood)}
+.note-card:focus-visible{outline:3px solid var(--wood);outline-offset:3px}
+.note-tag{justify-self:start;font:700 12px/1 var(--f-body);padding:6px 10px;border-radius:999px;background:var(--hl);color:var(--ink-soft)}
+.note-title{font:700 16px/1.7 var(--f-display)}
+.note-go{font-size:13px;font-weight:700;color:var(--wood)}
+.note-all{background:var(--ink);border-color:var(--ink);color:var(--on-ink);align-content:center}
+.note-all .note-go{color:var(--on-ink);opacity:.8}
 .voices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
 .voice{position:relative;background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:30px 24px 24px;font:700 17px/1.75 var(--f-display);transition:transform .35s var(--ease),border-color .35s}
 .voice::before{content:"“";position:absolute;top:-6px;left:18px;font:900 56px/1 var(--f-display);color:var(--wood)}
@@ -375,6 +384,19 @@ footer{padding-block:32px 104px;text-align:center;font-size:13px;color:var(--ink
       <p class="voice rv">資料請求のお客さんへの追客を密に行うことで、来場率の拡大につながりました。</p>
       <p class="voice rv">議事録で、漏れのない打ち合わせを行うことができるようになりました。</p>
       <p class="voice rv">追客用のソフトを購入する必要がなくなり、自社ソフトとして運用できるようになりました。</p>
+    </div>
+  </div></section>
+
+  <section class="blk" id="notes"><div class="wrap">
+    <div class="eyebrow rv">実践レポート</div>
+    <h2 class="h2 rv">現場で試したことと結果を、noteに書いています</h2>
+    <div class="notes">
+      <a class="note-card rv" href="https://note.com/rikaon_ai/n/nb74435631b68" target="_blank" rel="noopener"><span class="note-tag">受注率</span><span class="note-title">住宅営業こそAIを学ぶべき理由｜受注率が20%台→30%台になった話</span><span class="note-go">noteで読む</span></a>
+      <a class="note-card rv" href="https://note.com/rikaon_ai/n/n737281947f8a" target="_blank" rel="noopener"><span class="note-tag">追客</span><span class="note-title">来場につながらないお客様への追客が週1時間→5分に。AIに任せたのは「下書き」だけ</span><span class="note-go">noteで読む</span></a>
+      <a class="note-card rv" href="https://note.com/rikaon_ai/n/nf88522d91f2a" target="_blank" rel="noopener"><span class="note-tag">メール返信</span><span class="note-title">住宅営業こそAIを学ぶべき理由③｜メール返信と依頼忘れがなくなった話</span><span class="note-go">noteで読む</span></a>
+      <a class="note-card rv" href="https://note.com/rikaon_ai/n/n9cf6a228448b" target="_blank" rel="noopener"><span class="note-tag">土地探し</span><span class="note-title">商談中に土地を探して、その場で紹介する。AIで変わった住宅営業の土地探し</span><span class="note-go">noteで読む</span></a>
+      <a class="note-card rv" href="https://note.com/rikaon_ai/n/nf1ed9535e0ec" target="_blank" rel="noopener"><span class="note-tag">見積</span><span class="note-title">図面PDFを送るだけで窓・建具の見積が完成。1時間→10分になった仕組み</span><span class="note-go">noteで読む</span></a>
+      <a class="note-card note-all rv" href="https://note.com/rikaon_ai" target="_blank" rel="noopener"><span class="note-title">ほかの記事も、noteで順番に公開しています</span><span class="note-go">記事をすべて見る</span></a>
     </div>
   </div></section>
 
